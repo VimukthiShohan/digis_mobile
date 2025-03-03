@@ -1,3 +1,24 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@api/*": ["./api/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@configs/*": ["./configs/*"],
+      "@features/*": ["./features/*"],
+      "@authFeatures/*": ["./features/auth/features/*"],
+      "@digiEyeFeatures/*": ["./features/digiEye/features/*"],
+      "@digiExFeatures/*": ["./features/digiEx/features/*"],
+      "@digiMedFeatures/*": ["./features/digiMed/features/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@layouts/*": ["./layouts/*"],
+      "@navigation/*": ["./navigation/*"],
+      "@providers/*": ["./providers/*"],
+      "@store/*": ["./store/*"],
+      "@types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  }
 }
