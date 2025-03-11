@@ -9,8 +9,8 @@ import {
 } from 'react-native-image-picker';
 
 import { requestPermission } from '@utils/permissions.ts';
-import SafeAreaViewContainer from '@layouts/SafeAreaViewContainer.tsx';
 import { DigisTouchableOpacity } from '@components/common';
+import SafeAreaViewContainer from '@layouts/SafeAreaViewContainer.tsx';
 
 const DashboardScreen = () => {
   const openCamera = async () => {
