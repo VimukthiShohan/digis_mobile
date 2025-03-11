@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import OTPScreen from '@authFeatures/OTPScreen';
 import LoginScreen from '@authFeatures/LoginScreen';
 import LandingScreen from '@authFeatures/LandingScreen';
-import { AUTH_NAVIGATION_ROUTES } from '@configs/constants/navigationRoutes.ts';
+import { AUTH_NAVIGATION_ROUTES } from '@configs/constants';
 
 const AuthStack = createStackNavigator();
 

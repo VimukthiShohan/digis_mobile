@@ -7,7 +7,7 @@ import DigiExNavigator from '@features/digiEx/navigation';
 import DigiEyeNavigator from '@features/digiEye/navigation';
 import DigiMedNavigator from '@features/digiMed/navigation';
 import CustomDrawerNavigator from '@navigation/CustomDrawerNavigator.tsx';
-import { APP_NAVIGATION_ROUTES, AppNavigationParamList } from '@configs/constants/navigationRoutes.ts';
+import { APP_NAVIGATION_ROUTES, AppNavigationParamList } from '@configs/constants';
 
 const AppDrawer = createDrawerNavigator<AppNavigationParamList>();
 

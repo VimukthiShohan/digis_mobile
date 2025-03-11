@@ -2,9 +2,9 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import { DIGIEX_NAVIGATION_ROUTES } from '@configs/constants';
 import DigiExHomeScreen from '@digiExFeatures/DigiExHomeScreen';
 import DigiExNotificationsScreen from '@digiExFeatures/DigiExNotificationsScreen';
-import { DIGIEX_NAVIGATION_ROUTES } from '@configs/constants/navigationRoutes.ts';
 
 const DigiExTab = createBottomTabNavigator();
 const DigiExStack = createStackNavigator();
