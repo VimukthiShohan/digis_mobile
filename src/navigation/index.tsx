@@ -5,7 +5,7 @@ import { NavigationContainer, NavigationContainerRef, useNavigationContainerRef 
 
 import AppNavigator from './AppNavigator.tsx';
 import AuthNavigator from '@features/auth/navigation';
-import { ROOT_NAVIGATION_ROUTES } from '@configs/constants/navigationRoutes.ts';
+import { ROOT_NAVIGATION_ROUTES } from '@configs/constants';
 
 const RootStack = createStackNavigator();
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import { DIGIEYE_NAVIGATION_ROUTES } from '@configs/constants';
 import DigiEyeHomeScreen from '@digiEyeFeatures/DigiEyeHomeScreen';
-import { DIGIEYE_NAVIGATION_ROUTES } from '@configs/constants/navigationRoutes.ts';
 import DigiEyeInspectionFormScreen from '@digiEyeFeatures/DigiEyeInspectionFormScreen';
 
 const DigiEyeStack = createStackNavigator();

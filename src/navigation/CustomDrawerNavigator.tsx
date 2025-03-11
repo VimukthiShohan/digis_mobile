@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
 
-import { APP_NAVIGATION_ROUTES } from '@configs/constants/navigationRoutes.ts';
+import { APP_NAVIGATION_ROUTES } from '@configs/constants';
 
 const CustomDrawerNavigator: React.FC<DrawerContentComponentProps> = props => (
   <DrawerContentScrollView {...props}>
