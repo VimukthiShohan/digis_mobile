@@ -1238,6 +1238,27 @@ PODS:
     - React-jsiexecutor
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
+  - react-native-image-picker (8.2.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - react-native-safe-area-context (5.2.0):
     - DoubleConversion
     - glog
@@ -1612,7 +1633,30 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - RNDeviceInfo (14.0.4):
+    - React-Core
   - RNGestureHandler (2.24.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNPermissions (5.2.6):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1840,6 +1884,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1870,7 +1915,9 @@ DEPENDENCIES:
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCMaskedView (from `../node_modules/@react-native-masked-view/masked-view`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -1955,6 +2002,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   React-microtasksnativemodule:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-NativeModulesApple:
@@ -2015,8 +2064,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNCMaskedView:
     :path: "../node_modules/@react-native-masked-view/masked-view"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNPermissions:
+    :path: "../node_modules/react-native-permissions"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -2062,6 +2115,7 @@ SPEC CHECKSUMS:
   React-logger: 795cd5055782db394f187f9db0477d4b25b44291
   React-Mapbuffer: 0502faf46cab8fb89cfc7bf3e6c6109b6ef9b5de
   React-microtasksnativemodule: 663bc64e3a96c5fc91081923ae7481adc1359a78
+  react-native-image-picker: 0452fc9efc21101946746663bf34e0db5741f00c
   react-native-safe-area-context: 9c33120e9eac7741a5364cc2d9f74665049b76b3
   React-NativeModulesApple: 16fbd5b040ff6c492dacc361d49e63cba7a6a7a1
   React-perflogger: ab51b7592532a0ea45bf6eed7e6cae14a368b678
@@ -2092,12 +2146,14 @@ SPEC CHECKSUMS:
   ReactCodegen: a63a0ab6ae824aef2e8c744981edd718b16eb9f2
   ReactCommon: 3d39389f8e2a2157d5c999f8fba57bd1c8f226f0
   RNCMaskedView: 18c76ebdf9752bb75652829f99f6c3d1318cc864
+  RNDeviceInfo: feea80a690d2bde1fe51461cf548039258bd03f2
   RNGestureHandler: 9b05fab9a0b48fe48c968de7dbb9ca38a2b4f7ab
+  RNPermissions: 54cf1aba284ebd4357cb448e797303da71df04eb
   RNReanimated: ff71ce0443c71c8a77501ace7b9738ede83cfa55
   RNScreens: 991214b4e69016c1ae32830d9cea31c9c9422367
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 9b7fb56e7b08cde60e2153344fa6afbd88e5d99f
 
-PODFILE CHECKSUM: 11b9d598cace8026acbe4aa321c4660c7bac4a91
+PODFILE CHECKSUM: 5cd6f3aa8371bee27595bcb107f64eaa7bc7b2b7
 
 COCOAPODS: 1.15.2
