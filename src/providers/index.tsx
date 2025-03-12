@@ -1,4 +1,5 @@
 import React from 'react';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
@@ -8,7 +9,9 @@ interface ProvidersProps {
 
 const Providers: React.FC<ProvidersProps> = ({ children }) => (
   <GestureHandlerRootView>
-    <SafeAreaProvider>{children}</SafeAreaProvider>
+    <SafeAreaProvider>
+      <BottomSheetModalProvider>{children}</BottomSheetModalProvider>
+    </SafeAreaProvider>
   </GestureHandlerRootView>
 );
 
