@@ -7,14 +7,9 @@ import SafeAreaViewContainer from '@layouts/SafeAreaViewContainer.tsx';
 import { BottomSheetModalRef, DigisBottomSheetModal } from '@components/specific';
 
 const DashboardScreen = () => {
-  const [images, setImages] = React.useState<MediaItem[]>([]);
-
-  const handleImagesChange = (newImages: MediaItem[]) => {
-    setImages(newImages);
-  };
-
   const bottomSheetRef = React.useRef<BottomSheetModalRef>(null);
 
+  const [images, setImages] = React.useState<MediaItem[]>([]);
   const [isModalOpen, setIsModalOpen] = React.useState<boolean>(false);
 
   React.useEffect(() => {
@@ -22,23 +17,15 @@ const DashboardScreen = () => {
     else bottomSheetRef.current?.dismiss();
   }, [isModalOpen]);
 
+  const handleImagesChange = (newImages: MediaItem[]) => {
+    setImages(newImages);
+  };
+
   return (
     <SafeAreaViewContainer>
       <Text>DashboardScreen</Text>
 
       <DigisButton title={'Open Modal'} onPress={() => setIsModalOpen(true)} />
-
-      <DigisBottomSheetModal ref={bottomSheetRef} title={'Upload bill(s)'} onDismiss={setIsModalOpen}>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-        <Text>Content</Text>
-      </DigisBottomSheetModal>
 
       <DigisImageUpload
         images={images}
@@ -48,6 +35,17 @@ const DashboardScreen = () => {
         galleryButtonText="Select from Gallery"
         buttonProps={{ color: '#007AFF' }}
       />
+
+      <DigisBottomSheetModal ref={bottomSheetRef} title={'Upload bill(s)'} onDismiss={setIsModalOpen}>
+        <DigisImageUpload
+          images={images}
+          onImagesChange={handleImagesChange}
+          maxImages={5}
+          cameraButtonText="Take Photo"
+          galleryButtonText="Select from Gallery"
+          buttonProps={{ color: '#007AFF' }}
+        />
+      </DigisBottomSheetModal>
     </SafeAreaViewContainer>
   );
 };
